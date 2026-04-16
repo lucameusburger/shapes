@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(curl -s http://localhost:3002)",
+      "Bash(node -e ':*)",
+      "Bash(sips --help)",
+      "Bash(rsvg-convert -w 800 /tmp/shape-out.svg -o /tmp/shape-out.png)",
+      "Read(//tmp/**)",
+      "Bash(rsvg-convert -w 800 /tmp/shape-bare.svg -o /tmp/shape-bare.png)",
+      "Bash(curl -s --max-time 5 http://localhost:3002 -o /tmp/page.html)",
+      "Bash(lsof -nP -iTCP -sTCP:LISTEN)",
+      "Bash(curl -s --max-time 5 \"http://localhost:3002\")",
+      "Bash(grep -oE 'd=\"[^\"]{1,200}\"')",
+      "Bash(curl -s --max-time 10 \"http://localhost:3002\" -o /tmp/page.html)",
+      "Read(//private/tmp/**)",
+      "Bash(python3 -c \"import re,sys; m=re.search\\(r'd=\\\\\"\\(M[^\\\\\"]+\\)\\\\\"', open\\('/tmp/page.html'\\).read\\(\\)\\); print\\(m.group\\(1\\)[:400] if m else 'no path'\\)\")",
+      "WebFetch(domain:bbtgnn.github.io)",
+      "WebFetch(domain:github.com)",
+      "Bash(python3 -c ':*)",
+      "Bash(rsvg-convert -w 900 /tmp/out.svg -o /tmp/out.png)",
+      "Bash(curl -s --max-time 15 \"http://localhost:3002\" -o /tmp/page.html)"
+    ]
+  }
+}
